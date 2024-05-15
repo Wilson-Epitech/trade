@@ -10,32 +10,20 @@
 
 #include "trade.h"
 
-static int error_handling(int argc, char * const *argv)
-{
-    size_t i = 0;
-
-    if (argc != 2)
-        return FAILURE;
-    while (argv[i] != NULL) {
-        i +=1;
-    }
-    if (i < 2)
-        return FAILURE;
-    return SUCCESS;
-}
-
-int main(int argc, char * const *argv)
+int main(void)
 {
     char *buffer;
     size_t size_buffer = 100;
 
     buffer = malloc(sizeof(char) * 4096);
-    if (buffer == NULL)
+    if (buffer == NULL) {
+        fprintf(stderr, "malloc failed\n");
         return FAILURE;
-    error_handling(argc, argv);
+    }
     while (1) {
         if (getline(&buffer, &size_buffer, stdin) == -1) {
             free(buffer);
+            fprintf(stderr, "getline failed\n");
             return FAILURE;
         }
         fprintf(stderr, "line: %s\n", buffer);
