@@ -20,3 +20,5 @@ typedef struct trade_s {
     size_t initial_stack;
     float transaction_fee;
 } trade_t;
+
+char **word_array_delim(char const *str, char *separators);
