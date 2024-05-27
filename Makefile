@@ -44,8 +44,7 @@ $(NAME):	$(OBJ)
 doc:
 	@$(DOXYGEN) $(DOXYFILE)
 	@printf "[\033[0;36mdoc built\033[0m] -> %s\n" $(DOC_NAME)
-	@xsltproc xml/combine.xslt xml/index.xml > ./$(DOC_NAME)
-	@$(RM) -rf xml
+	@mv html $(DOC_DIR)
 
 clean:
 	@$(RM) $(OBJ)
