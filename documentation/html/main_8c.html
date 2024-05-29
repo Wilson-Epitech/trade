@@ -97,13 +97,13 @@ $(function(){ initResizable(false); });
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
-<code>#include &quot;trade.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="trade_8h_source.html">trade.h</a>&quot;</code><br />
 </div>
 <p><a href="main_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1b2ad389573288a77008764729377c69" id="r_a1b2ad389573288a77008764729377c69"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b2ad389573288a77008764729377c69">get_settings</a> (trade_t *trade, char **array)</td></tr>
+<tr class="memitem:a1b2ad389573288a77008764729377c69" id="r_a1b2ad389573288a77008764729377c69"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b2ad389573288a77008764729377c69">get_settings</a> (<a class="el" href="trade_8h.html#a6d75f10e57318c4f08164cd24c571903">trade_t</a> *trade, char **array)</td></tr>
 <tr class="memdesc:a1b2ad389573288a77008764729377c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hello World.  <br /></td></tr>
 <tr class="separator:a1b2ad389573288a77008764729377c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe" id="r_a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
@@ -122,7 +122,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void get_settings </td>
           <td>(</td>
-          <td class="paramtype">trade_t *</td>          <td class="paramname"><span class="paramname"><em>trade</em></span>, </td>
+          <td class="paramtype"><a class="el" href="trade_8h.html#a6d75f10e57318c4f08164cd24c571903">trade_t</a> *</td>          <td class="paramname"><span class="paramname"><em>trade</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -149,23 +149,31 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00021">21</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   22</span>{</div>
 <div class="line"><span class="lineno">   23</span>    <span class="keywordflow">if</span> (strcmp(array[1], <span class="stringliteral">&quot;timebank&quot;</span>)  == 0)</div>
-<div class="line"><span class="lineno">   24</span>        trade-&gt;timebank = atoi(array[2]);</div>
+<div class="line"><span class="lineno">   24</span>        trade-&gt;<a class="code hl_variable" href="structtrade__s.html#a46bad104de804aa824200dbf6abbf992">timebank</a> = atoi(array[2]);</div>
 <div class="line"><span class="lineno">   25</span>    <span class="keywordflow">if</span> (strcmp(array[1], <span class="stringliteral">&quot;time_per_move&quot;</span>) == 0)</div>
-<div class="line"><span class="lineno">   26</span>        trade-&gt;time_per_move = atoi(array[2]);</div>
+<div class="line"><span class="lineno">   26</span>        trade-&gt;<a class="code hl_variable" href="structtrade__s.html#af1ce0eb7f335c60b8143b81a1bf5cd20">time_per_move</a> = atoi(array[2]);</div>
 <div class="line"><span class="lineno">   27</span>    <span class="keywordflow">if</span> (strcmp(array[1], <span class="stringliteral">&quot;candle_interval&quot;</span>) == 0)</div>
-<div class="line"><span class="lineno">   28</span>        trade-&gt;candle_interval = atoi(array[2]);</div>
+<div class="line"><span class="lineno">   28</span>        trade-&gt;<a class="code hl_variable" href="structtrade__s.html#ab1ed84d5a58ebec093109df555fcade5">candle_interval</a> = atoi(array[2]);</div>
 <div class="line"><span class="lineno">   29</span>    <span class="keywordflow">if</span> (strcmp(array[1], <span class="stringliteral">&quot;candle_format&quot;</span>) == 0)</div>
-<div class="line"><span class="lineno">   30</span>        trade-&gt;candle_format = strdup(array[2]);</div>
+<div class="line"><span class="lineno">   30</span>        trade-&gt;<a class="code hl_variable" href="structtrade__s.html#a3e5d10d1e445a317f3a64673bb507bb8">candle_format</a> = strdup(array[2]);</div>
 <div class="line"><span class="lineno">   31</span>    <span class="keywordflow">if</span> (strcmp(array[1], <span class="stringliteral">&quot;candles_total&quot;</span>) == 0)</div>
-<div class="line"><span class="lineno">   32</span>        trade-&gt;candles_total = atoi(array[2]);</div>
+<div class="line"><span class="lineno">   32</span>        trade-&gt;<a class="code hl_variable" href="structtrade__s.html#ae4ec9f892c785149d81db3999480b1f7">candles_total</a> = atoi(array[2]);</div>
 <div class="line"><span class="lineno">   33</span>    <span class="keywordflow">if</span> (strcmp(array[1], <span class="stringliteral">&quot;candles_given&quot;</span>) == 0)</div>
-<div class="line"><span class="lineno">   34</span>        trade-&gt;candles_given = atoi(array[2]);</div>
+<div class="line"><span class="lineno">   34</span>        trade-&gt;<a class="code hl_variable" href="structtrade__s.html#ab9f77c4e513828fc955621669a887bca">candles_given</a> = atoi(array[2]);</div>
 <div class="line"><span class="lineno">   35</span>    <span class="keywordflow">if</span> (strcmp(array[1], <span class="stringliteral">&quot;initial_stack&quot;</span>) == 0)</div>
-<div class="line"><span class="lineno">   36</span>        trade-&gt;initial_stack = atoi(array[2]);</div>
+<div class="line"><span class="lineno">   36</span>        trade-&gt;<a class="code hl_variable" href="structtrade__s.html#a74000119d6220d9b135e8b8e96b226f0">initial_stack</a> = atoi(array[2]);</div>
 <div class="line"><span class="lineno">   37</span>    <span class="keywordflow">if</span> (strcmp(array[1], <span class="stringliteral">&quot;transaction_fee_percent&quot;</span>) == 0)</div>
-<div class="line"><span class="lineno">   38</span>        trade-&gt;transaction_fee = atof(array[2]);</div>
+<div class="line"><span class="lineno">   38</span>        trade-&gt;<a class="code hl_variable" href="structtrade__s.html#ad255ce80dd40e8a2c3f18ea68a1046bb">transaction_fee</a> = atof(array[2]);</div>
 <div class="line"><span class="lineno">   39</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   40</span>}</div>
+<div class="ttc" id="astructtrade__s_html_a3e5d10d1e445a317f3a64673bb507bb8"><div class="ttname"><a href="structtrade__s.html#a3e5d10d1e445a317f3a64673bb507bb8">trade_s::candle_format</a></div><div class="ttdeci">char * candle_format</div><div class="ttdef"><b>Definition</b> <a href="trade_8h_source.html#l00023">trade.h:23</a></div></div>
+<div class="ttc" id="astructtrade__s_html_a46bad104de804aa824200dbf6abbf992"><div class="ttname"><a href="structtrade__s.html#a46bad104de804aa824200dbf6abbf992">trade_s::timebank</a></div><div class="ttdeci">size_t timebank</div><div class="ttdef"><b>Definition</b> <a href="trade_8h_source.html#l00020">trade.h:20</a></div></div>
+<div class="ttc" id="astructtrade__s_html_a74000119d6220d9b135e8b8e96b226f0"><div class="ttname"><a href="structtrade__s.html#a74000119d6220d9b135e8b8e96b226f0">trade_s::initial_stack</a></div><div class="ttdeci">size_t initial_stack</div><div class="ttdef"><b>Definition</b> <a href="trade_8h_source.html#l00026">trade.h:26</a></div></div>
+<div class="ttc" id="astructtrade__s_html_ab1ed84d5a58ebec093109df555fcade5"><div class="ttname"><a href="structtrade__s.html#ab1ed84d5a58ebec093109df555fcade5">trade_s::candle_interval</a></div><div class="ttdeci">size_t candle_interval</div><div class="ttdef"><b>Definition</b> <a href="trade_8h_source.html#l00022">trade.h:22</a></div></div>
+<div class="ttc" id="astructtrade__s_html_ab9f77c4e513828fc955621669a887bca"><div class="ttname"><a href="structtrade__s.html#ab9f77c4e513828fc955621669a887bca">trade_s::candles_given</a></div><div class="ttdeci">size_t candles_given</div><div class="ttdef"><b>Definition</b> <a href="trade_8h_source.html#l00025">trade.h:25</a></div></div>
+<div class="ttc" id="astructtrade__s_html_ad255ce80dd40e8a2c3f18ea68a1046bb"><div class="ttname"><a href="structtrade__s.html#ad255ce80dd40e8a2c3f18ea68a1046bb">trade_s::transaction_fee</a></div><div class="ttdeci">double transaction_fee</div><div class="ttdef"><b>Definition</b> <a href="trade_8h_source.html#l00027">trade.h:27</a></div></div>
+<div class="ttc" id="astructtrade__s_html_ae4ec9f892c785149d81db3999480b1f7"><div class="ttname"><a href="structtrade__s.html#ae4ec9f892c785149d81db3999480b1f7">trade_s::candles_total</a></div><div class="ttdeci">size_t candles_total</div><div class="ttdef"><b>Definition</b> <a href="trade_8h_source.html#l00024">trade.h:24</a></div></div>
+<div class="ttc" id="astructtrade__s_html_af1ce0eb7f335c60b8143b81a1bf5cd20"><div class="ttname"><a href="structtrade__s.html#af1ce0eb7f335c60b8143b81a1bf5cd20">trade_s::time_per_move</a></div><div class="ttdeci">size_t time_per_move</div><div class="ttdef"><b>Definition</b> <a href="trade_8h_source.html#l00021">trade.h:21</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -190,24 +198,24 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   50</span>    <span class="keywordtype">size_t</span> size_buffer = 0;</div>
 <div class="line"><span class="lineno">   51</span>    <span class="comment">// int i = 0;</span></div>
 <div class="line"><span class="lineno">   52</span>    <span class="keywordtype">bool</span> buy = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   53</span>    trade_t *trade = malloc(<span class="keyword">sizeof</span>(trade_t));</div>
+<div class="line"><span class="lineno">   53</span>    <a class="code hl_struct" href="structtrade__s.html">trade_t</a> *trade = malloc(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structtrade__s.html">trade_t</a>));</div>
 <div class="line"><span class="lineno">   54</span> </div>
 <div class="line"><span class="lineno">   55</span>    <span class="keywordflow">if</span> (trade == NULL)</div>
-<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">return</span> FAILURE;</div>
-<div class="line"><span class="lineno">   57</span>    memset(trade, 0, <span class="keyword">sizeof</span>(trade_t));</div>
+<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="trade_8h.html#a153c0e0bb445befa336adcf4125dc755">FAILURE</a>;</div>
+<div class="line"><span class="lineno">   57</span>    memset(trade, 0, <span class="keyword">sizeof</span>(<a class="code hl_struct" href="structtrade__s.html">trade_t</a>));</div>
 <div class="line"><span class="lineno">   58</span>    buffer = malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">char</span>) * size_buffer);</div>
 <div class="line"><span class="lineno">   59</span>    <span class="keywordflow">if</span> (buffer == NULL) {</div>
 <div class="line"><span class="lineno">   60</span>        fprintf(stderr, <span class="stringliteral">&quot;malloc failed\n&quot;</span>);</div>
-<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">return</span> FAILURE;</div>
+<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="trade_8h.html#a153c0e0bb445befa336adcf4125dc755">FAILURE</a>;</div>
 <div class="line"><span class="lineno">   62</span>    }</div>
 <div class="line"><span class="lineno">   63</span>    <span class="keywordflow">while</span> (1) {</div>
 <div class="line"><span class="lineno">   64</span>        <span class="keywordflow">if</span> (getline(&amp;buffer, &amp;size_buffer, stdin) == -1) {</div>
 <div class="line"><span class="lineno">   65</span>            free(buffer);</div>
 <div class="line"><span class="lineno">   66</span>            fprintf(stderr, <span class="stringliteral">&quot;getline failed\n&quot;</span>);</div>
-<div class="line"><span class="lineno">   67</span>            <span class="keywordflow">return</span> FAILURE;</div>
+<div class="line"><span class="lineno">   67</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="trade_8h.html#a153c0e0bb445befa336adcf4125dc755">FAILURE</a>;</div>
 <div class="line"><span class="lineno">   68</span>        }</div>
 <div class="line"><span class="lineno">   69</span>        <span class="keywordflow">if</span> (strncmp(buffer, <span class="stringliteral">&quot;settings&quot;</span>, 8) == 0) {</div>
-<div class="line"><span class="lineno">   70</span>            <span class="keywordtype">char</span> **array = word_array_delim(buffer, <span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><span class="lineno">   70</span>            <span class="keywordtype">char</span> **array = <a class="code hl_function" href="word__array__delim_8c.html#a04a1b43f512af074c19738dc6e3de682">word_array_delim</a>(buffer, <span class="stringliteral">&quot; &quot;</span>);</div>
 <div class="line"><span class="lineno">   71</span>            <a class="code hl_function" href="#a1b2ad389573288a77008764729377c69">get_settings</a>(trade, array);</div>
 <div class="line"><span class="lineno">   72</span>        }</div>
 <div class="line"><span class="lineno">   73</span>        <span class="keywordflow">if</span> (strncmp(buffer, <span class="stringliteral">&quot;update&quot;</span>, 6) == 0) {</div>
@@ -225,9 +233,13 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   85</span>        }</div>
 <div class="line"><span class="lineno">   86</span>        <span class="comment">// display_values(trade);</span></div>
 <div class="line"><span class="lineno">   87</span>    }</div>
-<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">return</span> SUCCESS;</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="trade_8h.html#abe60a9f2bde8bc2afea53b9efcf055bf">SUCCESS</a>;</div>
 <div class="line"><span class="lineno">   89</span>}</div>
 <div class="ttc" id="amain_8c_html_a1b2ad389573288a77008764729377c69"><div class="ttname"><a href="#a1b2ad389573288a77008764729377c69">get_settings</a></div><div class="ttdeci">static void get_settings(trade_t *trade, char **array)</div><div class="ttdoc">Hello World.</div><div class="ttdef"><b>Definition</b> <a href="main_8c_source.html#l00021">main.c:21</a></div></div>
+<div class="ttc" id="astructtrade__s_html"><div class="ttname"><a href="structtrade__s.html">trade_s</a></div><div class="ttdef"><b>Definition</b> <a href="trade_8h_source.html#l00019">trade.h:19</a></div></div>
+<div class="ttc" id="atrade_8h_html_a153c0e0bb445befa336adcf4125dc755"><div class="ttname"><a href="trade_8h.html#a153c0e0bb445befa336adcf4125dc755">FAILURE</a></div><div class="ttdeci">static const int FAILURE</div><div class="ttdef"><b>Definition</b> <a href="trade_8h_source.html#l00012">trade.h:12</a></div></div>
+<div class="ttc" id="atrade_8h_html_abe60a9f2bde8bc2afea53b9efcf055bf"><div class="ttname"><a href="trade_8h.html#abe60a9f2bde8bc2afea53b9efcf055bf">SUCCESS</a></div><div class="ttdeci">static const int SUCCESS</div><div class="ttdef"><b>Definition</b> <a href="trade_8h_source.html#l00011">trade.h:11</a></div></div>
+<div class="ttc" id="aword__array__delim_8c_html_a04a1b43f512af074c19738dc6e3de682"><div class="ttname"><a href="word__array__delim_8c.html#a04a1b43f512af074c19738dc6e3de682">word_array_delim</a></div><div class="ttdeci">char ** word_array_delim(char const *str, char *separators)</div><div class="ttdoc">Create a char **array of a char *string.</div><div class="ttdef"><b>Definition</b> <a href="word__array__delim_8c_source.html#l00073">word_array_delim.c:73</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

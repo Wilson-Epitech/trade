@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['get_5fsettings_0',['get_settings',['../main_8c.html#a1b2ad389573288a77008764729377c69',1,'main.c']]]
+  ['count_5fi_5fnb_5fwords_0',['count_i_nb_words',['../word__array__delim_8c.html#ab19de611cc63269245759f6a1a8e01e6',1,'word_array_delim.c']]]
 ];

@@ -29,7 +29,6 @@ LIB =				$(LIB_DIR)word_array_delim.c	\
 DOXYGEN = doxygen
 DOC_DIR = ./documentation/
 DOXYFILE = $(DOC_DIR)Doxygen_conf
-DOC_NAME = Documentation.md
 
 # -------------------------------------------------------------------------- #
 
@@ -42,8 +41,9 @@ $(NAME):	$(OBJ)
 	@printf "[\033[0;36mbuilt\033[0m] -> %s\n" $(NAME)
 
 doc:
-	@$(DOXYGEN) $(DOXYFILE)
-	@printf "[\033[0;36mdoc built\033[0m] -> %s\n" $(DOC_NAME)
+	@RM -rf $(DOC_DIR)html
+	@$(DOXYGEN) $(DOXYFILE) > /dev/null
+	@printf "[\033[0;36mdoc built\033[0m]\n"
 	@mv html $(DOC_DIR)
 
 clean:
