@@ -105,6 +105,7 @@ html {
 
     /* code block colors */
     --code-background: #f5f5f5;
+    --code-color: #EB5757;
     --code-foreground: var(--page-foreground-color);
 
     /* fragment colors */
@@ -1188,7 +1189,7 @@ code, div.fragment, pre.fragment {
 code {
     display: inline;
     background: var(--code-background);
-    color: var(--code-foreground);
+    color: var(--code-color);
     padding: 2px 6px;
 }
 

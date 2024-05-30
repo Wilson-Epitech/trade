@@ -7,5 +7,5 @@ var structtrade__s =
     [ "initial_stack", "structtrade__s.html#a74000119d6220d9b135e8b8e96b226f0", null ],
     [ "time_per_move", "structtrade__s.html#af1ce0eb7f335c60b8143b81a1bf5cd20", null ],
     [ "timebank", "structtrade__s.html#a46bad104de804aa824200dbf6abbf992", null ],
-    [ "transaction_fee", "structtrade__s.html#ad255ce80dd40e8a2c3f18ea68a1046bb", null ]
+    [ "transaction_fee", "structtrade__s.html#a5142ac9e7d97efd3f8849de7c101dd23", null ]
 ];

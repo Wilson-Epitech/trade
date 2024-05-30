@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['boards_0',['Supported Boards',['../index.html#autotoc_md1',1,'']]],
-  ['buy_5fthreshold_1',['BUY_THRESHOLD',['../main_8c.html#af174388835d206679169fcf44a83bfb0',1,'main.c']]]
+  ['candle_5fformat_0',['candle_format',['../structtrade__s.html#a3e5d10d1e445a317f3a64673bb507bb8',1,'trade_s']]],
+  ['candle_5finterval_1',['candle_interval',['../structtrade__s.html#ab1ed84d5a58ebec093109df555fcade5',1,'trade_s']]],
+  ['candles_5fgiven_2',['candles_given',['../structtrade__s.html#ab9f77c4e513828fc955621669a887bca',1,'trade_s']]],
+  ['candles_5ftotal_3',['candles_total',['../structtrade__s.html#ae4ec9f892c785149d81db3999480b1f7',1,'trade_s']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['sell_5fthreshold_0',['SELL_THRESHOLD',['../main_8c.html#aa677e3a262bc7a5efd4bfa3d6b1fbb98',1,'main.c']]],
-  ['supported_20boards_1',['Supported Boards',['../index.html#autotoc_md1',1,'']]]
+  ['👀_20vue_20d_20ensemble_0',['👀 Vue d&apos;Ensemble',['../index.html#autotoc_md1',1,'']]]
 ];
