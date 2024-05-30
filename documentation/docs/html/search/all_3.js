@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['informations_20préliminaires_0',['Informations Préliminaires',['../index.html#autotoc_md2',1,'']]],
-  ['initial_5fstack_1',['initial_stack',['../structtrade__s.html#a74000119d6220d9b135e8b8e96b226f0',1,'trade_s']]],
-  ['introduction_2',['Introduction',['../index.html',1,'']]]
+  ['high_0',['high',['../structcandles__s.html#a59bc42fd604e0f2b8b1260e2583523d2',1,'candles_s']]]
 ];

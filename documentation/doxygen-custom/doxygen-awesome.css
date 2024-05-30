@@ -2647,3 +2647,7 @@ h2:hover a.anchorlink, h1:hover a.anchorlink, h3:hover a.anchorlink, h4:hover a.
         border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
     }
 }
+
+code a.el {
+    color: var(--code-color) !important;
+}
