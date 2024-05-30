@@ -28,7 +28,7 @@ LIB =				$(LIB_DIR)word_array_delim.c	\
 
 DOXYGEN = doxygen
 DOC_DIR = ./documentation/
-DOXYFILE = $(DOC_DIR)Doxygen_conf
+DOXYFILE = $(DOC_DIR)Doxyfile
 
 # -------------------------------------------------------------------------- #
 
@@ -38,21 +38,19 @@ all:	$(NAME)
 
 $(NAME):	$(OBJ)
 	$(CC) -o $(NAME) $(OBJ) $(CPPLAGS) $(CFLAGS)
-	@printf "[\033[0;36mbuilt\033[0m] -> %s\n" $(NAME)
+	@printf "%s -> [\033[0;36mbuilt\033[0m]\n" $(NAME)
 
 doc:
-	@RM -rf $(DOC_DIR)html
 	@$(DOXYGEN) $(DOXYFILE) > /dev/null
 	@printf "[\033[0;36mdoc built\033[0m]\n"
-	@mv html $(DOC_DIR)
 
 clean:
 	@$(RM) $(OBJ)
-	@printf "[\033[0;31mdeleted\033[0m] -> %s\n" $(OBJ)
+	@printf "%s -> [\033[0;31mdeleted\033[0m]\n" $(OBJ)
 
 fclean: clean
 	@$(RM) $(NAME)
-	@printf "[\033[0;31mdeleted\033[0m] -> %s\n" $(NAME)
+	@printf "%s -> [\033[0;31mdeleted\033[0m]\n" $(NAME)
 
 re:	 fclean all
 
