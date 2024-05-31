@@ -132,6 +132,7 @@ $(function(){initNavTree('trade_8h.html',''); initResizable(true); });
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">trade.h File Reference</div></div>
 </div><!--header-->
@@ -148,15 +149,34 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtrade__s.html">trade_s</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcandles__s.html">candles_s</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsettings__s.html">settings_s</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcandle__s.html">candle_s</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a6d75f10e57318c4f08164cd24c571903" id="r_a6d75f10e57318c4f08164cd24c571903"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structtrade__s.html">trade_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d75f10e57318c4f08164cd24c571903">trade_t</a></td></tr>
 <tr class="separator:a6d75f10e57318c4f08164cd24c571903"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac153ce2d98531d0e37e8842d791f7f8d" id="r_ac153ce2d98531d0e37e8842d791f7f8d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structcandles__s.html">candles_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac153ce2d98531d0e37e8842d791f7f8d">candles_t</a></td></tr>
-<tr class="separator:ac153ce2d98531d0e37e8842d791f7f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d5b5e8748451e0f430229ed4c14cb2b" id="r_a0d5b5e8748451e0f430229ed4c14cb2b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structsettings__s.html">settings_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d5b5e8748451e0f430229ed4c14cb2b">settings_t</a></td></tr>
+<tr class="separator:a0d5b5e8748451e0f430229ed4c14cb2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab861ef9b4fe7d24004fcf1182b72aafc" id="r_ab861ef9b4fe7d24004fcf1182b72aafc"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structcandle__s.html">candle_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab861ef9b4fe7d24004fcf1182b72aafc">candle_t</a></td></tr>
+<tr class="separator:ab861ef9b4fe7d24004fcf1182b72aafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a848adcf401be9122514726f46d6e55a4" id="r_a848adcf401be9122514726f46d6e55a4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a848adcf401be9122514726f46d6e55a4">CandleFormat</a> { <br />
+&#160;&#160;<a class="el" href="#a848adcf401be9122514726f46d6e55a4a360fa17489dc77903b0bcf1d91ae47bb">PAIR</a>
+, <a class="el" href="#a848adcf401be9122514726f46d6e55a4a0ace72efd9e987dfd807365d0ca50141">DATE</a>
+, <a class="el" href="#a848adcf401be9122514726f46d6e55a4a0c3a1dacf94061154b3ee354359c5893">HIGH</a>
+, <a class="el" href="#a848adcf401be9122514726f46d6e55a4a6a226f4143ca3b18999551694cdb72a8">LOW</a>
+, <br />
+&#160;&#160;<a class="el" href="#a848adcf401be9122514726f46d6e55a4a0e0143636c29971736eab47415868eae">OPEN</a>
+, <a class="el" href="#a848adcf401be9122514726f46d6e55a4a685f73194ad125cbc784c3210cdb3449">CLOSE</a>
+, <a class="el" href="#a848adcf401be9122514726f46d6e55a4a9d326c2efb1f1ef1840d474c0f9b8a48">VOLUME</a>
+<br />
+ }</td></tr>
+<tr class="separator:a848adcf401be9122514726f46d6e55a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -165,14 +185,28 @@ Functions</h2></td></tr>
 <tr class="separator:a04a1b43f512af074c19738dc6e3de682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ac153ce2d98531d0e37e8842d791f7f8d" name="ac153ce2d98531d0e37e8842d791f7f8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac153ce2d98531d0e37e8842d791f7f8d">&#9670;&#160;</a></span>candles_t</h2>
+<a id="ab861ef9b4fe7d24004fcf1182b72aafc" name="ab861ef9b4fe7d24004fcf1182b72aafc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab861ef9b4fe7d24004fcf1182b72aafc">&#9670;&#160;</a></span>candle_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structcandles__s.html">candles_s</a> <a class="el" href="#ac153ce2d98531d0e37e8842d791f7f8d">candles_t</a></td>
+          <td class="memname">typedef struct <a class="el" href="structcandle__s.html">candle_s</a> <a class="el" href="#ab861ef9b4fe7d24004fcf1182b72aafc">candle_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d5b5e8748451e0f430229ed4c14cb2b" name="a0d5b5e8748451e0f430229ed4c14cb2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d5b5e8748451e0f430229ed4c14cb2b">&#9670;&#160;</a></span>settings_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structsettings__s.html">settings_s</a> <a class="el" href="#a0d5b5e8748451e0f430229ed4c14cb2b">settings_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -190,6 +224,30 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a848adcf401be9122514726f46d6e55a4" name="a848adcf401be9122514726f46d6e55a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a848adcf401be9122514726f46d6e55a4">&#9670;&#160;</a></span>CandleFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a848adcf401be9122514726f46d6e55a4">CandleFormat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a848adcf401be9122514726f46d6e55a4a360fa17489dc77903b0bcf1d91ae47bb" name="a848adcf401be9122514726f46d6e55a4a360fa17489dc77903b0bcf1d91ae47bb"></a>PAIR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a848adcf401be9122514726f46d6e55a4a0ace72efd9e987dfd807365d0ca50141" name="a848adcf401be9122514726f46d6e55a4a0ace72efd9e987dfd807365d0ca50141"></a>DATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a848adcf401be9122514726f46d6e55a4a0c3a1dacf94061154b3ee354359c5893" name="a848adcf401be9122514726f46d6e55a4a0c3a1dacf94061154b3ee354359c5893"></a>HIGH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a848adcf401be9122514726f46d6e55a4a6a226f4143ca3b18999551694cdb72a8" name="a848adcf401be9122514726f46d6e55a4a6a226f4143ca3b18999551694cdb72a8"></a>LOW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a848adcf401be9122514726f46d6e55a4a0e0143636c29971736eab47415868eae" name="a848adcf401be9122514726f46d6e55a4a0e0143636c29971736eab47415868eae"></a>OPEN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a848adcf401be9122514726f46d6e55a4a685f73194ad125cbc784c3210cdb3449" name="a848adcf401be9122514726f46d6e55a4a685f73194ad125cbc784c3210cdb3449"></a>CLOSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a848adcf401be9122514726f46d6e55a4a9d326c2efb1f1ef1840d474c0f9b8a48" name="a848adcf401be9122514726f46d6e55a4a9d326c2efb1f1ef1840d474c0f9b8a48"></a>VOLUME&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>

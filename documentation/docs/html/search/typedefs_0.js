@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['candles_5ft_0',['candles_t',['../trade_8h.html#ac153ce2d98531d0e37e8842d791f7f8d',1,'trade.h']]]
+  ['candle_5ft_0',['candle_t',['../trade_8h.html#ab861ef9b4fe7d24004fcf1182b72aafc',1,'trade.h']]]
 ];

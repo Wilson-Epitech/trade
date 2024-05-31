@@ -70,6 +70,14 @@ static char *parse_word(char const *str, int *i, char *separators)
     return word;
 }
 
+/**
+ * @brief This function take a string in first argument and another
+ * string of separators in second argument, and she cut the
+ * first string with the second string, and she return an array of string.
+ * @param str
+ * @param separators
+ * @return char**
+ */
 char **word_array_delim(char const *str, char *separators)
 {
     int i = 0;

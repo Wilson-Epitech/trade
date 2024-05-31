@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['open_0',['open',['../structcandles__s.html#a8ad46fff9988b66b053fb69aef639978',1,'candles_s']]]
+  ['low_0',['low',['../structcandle__s.html#a5244f46f6745949a59d0b11f6567e2e9',1,'candle_s']]]
 ];

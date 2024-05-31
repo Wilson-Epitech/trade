@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['word_5farray_5fdelim_0',['word_array_delim',['../word__array__delim_8c.html#a04a1b43f512af074c19738dc6e3de682',1,'word_array_delim(char const *str, char *separators):&#160;word_array_delim.c'],['../trade_8h.html#a04a1b43f512af074c19738dc6e3de682',1,'word_array_delim(char const *str, char *separators):&#160;word_array_delim.c']]],
-  ['word_5farray_5fdelim_2ec_1',['word_array_delim.c',['../word__array__delim_8c.html',1,'']]]
+  ['time_5fper_5fmove_0',['time_per_move',['../structsettings__s.html#a3457840c603ec507545413f43d8da88f',1,'settings_s']]],
+  ['timebank_1',['timebank',['../structsettings__s.html#a11647e7a929be2968ebb3a8252374fa7',1,'settings_s']]],
+  ['trade_2eh_2',['trade.h',['../trade_8h.html',1,'']]],
+  ['trade_5fs_3',['trade_s',['../structtrade__s.html',1,'']]],
+  ['trade_5ft_4',['trade_t',['../trade_8h.html#a6d75f10e57318c4f08164cd24c571903',1,'trade.h']]],
+  ['transaction_5ffee_5',['transaction_fee',['../structsettings__s.html#a92db7919745d4dcf757e7beb0dc6fb19',1,'settings_s']]]
 ];

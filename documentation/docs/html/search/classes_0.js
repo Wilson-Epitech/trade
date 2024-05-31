@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['candles_5fs_0',['candles_s',['../structcandles__s.html',1,'']]]
+  ['candle_5fs_0',['candle_s',['../structcandle__s.html',1,'']]]
 ];

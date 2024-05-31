@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]]
+  ['pair_0',['PAIR',['../trade_8h.html#a848adcf401be9122514726f46d6e55a4a360fa17489dc77903b0bcf1d91ae47bb',1,'trade.h']]],
+  ['préliminaires_1',['Informations Préliminaires',['../index.html#autotoc_md2',1,'']]]
 ];

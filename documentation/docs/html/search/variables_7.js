@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['volume_0',['volume',['../structcandles__s.html#a7ab1d865c447f3c4d307fe0ed43307b3',1,'candles_s']]]
+  ['size_5fbuffer_0',['size_buffer',['../structtrade__s.html#a0455846361b777bc84e4132575d55ec6',1,'trade_s']]]
 ];

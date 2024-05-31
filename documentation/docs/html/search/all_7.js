@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['open_0',['open',['../structcandles__s.html#a8ad46fff9988b66b053fb69aef639978',1,'candles_s']]]
+  ['main_0',['main',['../main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main.c']]],
+  ['main_2ec_1',['main.c',['../main_8c.html',1,'']]]
 ];

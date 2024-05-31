@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['informations_20préliminaires_0',['Informations Préliminaires',['../index.html#autotoc_md2',1,'']]],
-  ['initial_5fstack_1',['initial_stack',['../structtrade__s.html#a74000119d6220d9b135e8b8e96b226f0',1,'trade_s']]],
-  ['introduction_2',['Introduction',['../index.html',1,'']]]
+  ['high_0',['HIGH',['../trade_8h.html#a848adcf401be9122514726f46d6e55a4a0c3a1dacf94061154b3ee354359c5893',1,'trade.h']]],
+  ['high_1',['high',['../structcandle__s.html#a410b0763762f958bc91913fb3ebbaa64',1,'candle_s']]]
 ];

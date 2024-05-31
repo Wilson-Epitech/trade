@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['trade_5fs_0',['trade_s',['../structtrade__s.html',1,'']]]
+  ['settings_5fs_0',['settings_s',['../structsettings__s.html',1,'']]]
 ];
