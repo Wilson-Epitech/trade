@@ -62,7 +62,7 @@ static void get_settings(settings_t *settings, char **array)
 static int action(settings_t *settings, candle_t *candle,
     trade_t *trade, char **array)
 {
-    float simulate = 0;
+    double simulate = 0;
 
     if (strncmp(trade->buffer, "update game next_candles", 24) == 0) {
         array = word_array_delim(trade->buffer, " ");

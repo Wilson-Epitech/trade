@@ -39,8 +39,8 @@ typedef struct trade_s {
     char *buffer;
     char **splited;
     size_t size_buffer;
-    float stack_after;
-    float buy_quantity;
+    double stack_after;
+    double buy_quantity;
 } trade_t;
 
 typedef struct candle_format_s {
@@ -61,8 +61,8 @@ typedef struct settings_s {
     size_t candles_total;
     size_t candles_given;
     candle_format_t candle_format;
-    float initial_stack;
-    float transaction_fee;
+    double initial_stack;
+    double transaction_fee;
 } settings_t;
 
 typedef struct candle_s {
