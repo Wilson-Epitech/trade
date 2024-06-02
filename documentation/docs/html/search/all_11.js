@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['word_5farray_5fdelim_0',['word_array_delim',['../word__array__delim_8c.html#a04a1b43f512af074c19738dc6e3de682',1,'word_array_delim(char const *str, char *separators):&#160;word_array_delim.c'],['../trade_8h.html#a04a1b43f512af074c19738dc6e3de682',1,'word_array_delim(char const *str, char *separators):&#160;word_array_delim.c']]],
-  ['word_5farray_5fdelim_2ec_1',['word_array_delim.c',['../word__array__delim_8c.html',1,'']]]
+  ['volume_0',['volume',['../structcandle__s.html#a6f70c81621370e342c7bf9cac8889d7c',1,'candle_s']]],
+  ['volume_5fposition_1',['volume_position',['../structcandle__format__s.html#a4ae110fb963a43c0ba1bee8a2d32229a',1,'candle_format_s']]],
+  ['vue_20d_20ensemble_2',['👀 Vue d&apos;Ensemble',['../index.html#autotoc_md1',1,'']]]
 ];

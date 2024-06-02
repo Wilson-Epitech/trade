@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main.c']]]
+  ['is_5fdelim_0',['is_delim',['../word__array__delim_8c.html#a3202420ce10577ae67b5628b4e8079d0',1,'word_array_delim.c']]]
 ];

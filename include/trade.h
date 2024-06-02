@@ -5,31 +5,31 @@
 ** trade
 */
 
-/** \def the PERIODS define representing  */
-#define PERIODS 14
-
-/** \def the SELL_THRESHOLD define representing  */
-#define SELL_THRESHOLD 70
-
-/** \def the BUY_THRESHOLD define representing  */
-#define BUY_THRESHOLD 30
-
-//--program return values --//
 /** @brief This return value
- * representing the success
+ * representing the `success`
  * of the program or function
 */
 static const int SUCCESS = 0;
 
 /** @brief This return value
- * representing the failure
+ * representing the `failure`
  * of the program or function
 */
 static const int FAILURE = 84;
 
-//--values into program --//
+/** @brief This return value
+ * representing the `buy` action
+*/
 static const int BUY = 2;
+
+/** @brief This return value
+ * representing the `nothing` action
+*/
 static const int NOTHING = 1;
+
+/** @brief This return value
+ * representing the `sell` action
+*/
 static const int SELL = -1;
 
 #pragma once

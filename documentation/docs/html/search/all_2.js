@@ -1,6 +1,16 @@
 var searchData=
 [
-  ['d_20ensemble_0',['👀 Vue d&apos;Ensemble',['../index.html#autotoc_md1',1,'']]],
-  ['date_1',['date',['../structcandle__s.html#af8eb89979fffc69af06f4b24e2837e9d',1,'candle_s']]],
-  ['date_5fposition_2',['date_position',['../structcandle__format__s.html#af1cc68d2ffec628d1d37f679c3ca5924',1,'candle_format_s']]]
+  ['candle_5fformat_0',['candle_format',['../structsettings__s.html#a36859d330aec40ddc9e2742985e0b180',1,'settings_s']]],
+  ['candle_5fformat_5fs_1',['candle_format_s',['../structcandle__format__s.html',1,'']]],
+  ['candle_5fformat_5ft_2',['candle_format_t',['../trade_8h.html#a6baedd4bfcab8dbce15133dfeabb3070',1,'trade.h']]],
+  ['candle_5finterval_3',['candle_interval',['../structsettings__s.html#a4f1f9495ac023e6af6efae6be65bf2ff',1,'settings_s']]],
+  ['candle_5fs_4',['candle_s',['../structcandle__s.html',1,'']]],
+  ['candle_5fstr_5',['candle_str',['../structcandle__format__s.html#afe4d6d3fc63afc7e894042ccfb205373',1,'candle_format_s']]],
+  ['candle_5ft_6',['candle_t',['../trade_8h.html#ab861ef9b4fe7d24004fcf1182b72aafc',1,'trade.h']]],
+  ['candles_5fgiven_7',['candles_given',['../structsettings__s.html#aed44155056117776de9fc5c0fb77a61d',1,'settings_s']]],
+  ['candles_5frsi_8',['candles_rsi',['../structtrade__s.html#a574a82bc888798ca9e092018a3db3d59',1,'trade_s']]],
+  ['candles_5ftotal_9',['candles_total',['../structsettings__s.html#a354eec9979f678d51970a6f0850c9594',1,'settings_s']]],
+  ['close_10',['close',['../structcandle__s.html#a0816663797a94e5fd73025dc92ac95ab',1,'candle_s']]],
+  ['close_5fposition_11',['close_position',['../structcandle__format__s.html#a8778f8c18e71d57b2306e3638c112d8e',1,'candle_format_s']]],
+  ['count_5fi_5fnb_5fwords_12',['count_i_nb_words',['../word__array__delim_8c.html#ab19de611cc63269245759f6a1a8e01e6',1,'word_array_delim.c']]]
 ];

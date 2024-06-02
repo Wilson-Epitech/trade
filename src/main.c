@@ -12,6 +12,16 @@
 
 #include "trade.h"
 
+/**
+* @brief Extracts position information for candle format
+* elements.\n This function parses the candle format string
+* to determine the positions of the elements (such as pair,
+* date, high, low, open, close, volume) within the string.
+* It updates the respective positions in the settings_t
+* structure.
+* @param settings A pointer to the settings structure.
+* @param str The candle format string.
+*/
 static void get_format_position(settings_t *settings, char *str)
 {
     char **array = word_array_delim(str, ",");
@@ -36,6 +46,14 @@ static void get_format_position(settings_t *settings, char *str)
     }
 }
 
+/**
+* @brief Parses and assigns settings from array data.\n
+* This function interprets the settings provided in an array
+* format and assigns them to the respective fields in the
+* settings_t structure.
+* @param settings A pointer to the settings structure.
+* @param array An array containing setting information.
+*/
 static void get_settings(settings_t *settings, char **array)
 {
     if (strcmp(array[1], "timebank") == 0)
@@ -59,6 +77,18 @@ static void get_settings(settings_t *settings, char **array)
     return;
 }
 
+/**
+ * @brief Determines the action to take based on trade buffer
+ * content.\n
+ * This function analyzes the content of the trade buffer to
+ * determine the appropriate action to take. It updates the
+ * trade and candle structures accordingly.
+ * @param settings A pointer to the settings structure.
+ * @param candle A pointer to the candle structure.
+ * @param trade A pointer to the trade structure.
+ * @param array An array containing trade buffer content.
+ * @return Returns the action to be taken.
+*/
 static int action(settings_t *settings, candle_t *candle,
     trade_t *trade, char **array)
 {
@@ -83,6 +113,15 @@ static int action(settings_t *settings, candle_t *candle,
     return 0;
 }
 
+/**
+ * @brief Sends trade actions to the server.\n
+ * This function evaluates the action to be taken and sends
+ * the appropriate trade command to the server. It also
+ * updates the settings and trade structures as needed.
+ * @param settings A pointer to the settings structure.
+ * @param trade A pointer to the trade structure.
+ * @param candle A pointer to the candle structure.
+*/
 static void send_to_sever(settings_t *settings,
     trade_t *trade, candle_t *candle)
 {
@@ -102,6 +141,18 @@ static void send_to_sever(settings_t *settings,
     }
 }
 
+/**
+ * @brief Main loop for bot execution.\n
+ * This function serves as the main loop for executing the
+ * bot logic. It continuously reads input from standard
+ * input, processes settings, and performs trade actions
+ * accordingly.
+ * @param settings A pointer to the settings structure.
+ * @param trade A pointer to the trade structure.
+ * @param candle A pointer to the candle structure.
+ * @return Returns `SUCCESS` if the bot execution completes
+ * successfully, otherwise returns `FAILURE`.
+*/
 static int bot_loop(settings_t *settings, trade_t *trade, candle_t *candle)
 {
     char **array = NULL;
@@ -122,7 +173,17 @@ static int bot_loop(settings_t *settings, trade_t *trade, candle_t *candle)
     return SUCCESS;
 }
 
-/// This is the main
+/**
+* This function initializes the settings_t, trade_t, and
+* candle_t structures by allocating memory
+* for each and setting the memory contents to 0 using the
+* memset() function. It also allocates memory
+* for the buffer member of the trade_t structure. Finally,
+* it calls the bot_loop() function to execute
+* the main logic of the program.
+* @return Returns `SUCCESS` if the program executes
+* successfully, otherwise returns `FAILURE`.
+*/
 int main(void)
 {
     settings_t *settings = malloc(sizeof(settings_t));

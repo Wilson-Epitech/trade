@@ -4,7 +4,6 @@ var trade_8h =
     [ "candle_format_s", "structcandle__format__s.html", "structcandle__format__s" ],
     [ "settings_s", "structsettings__s.html", "structsettings__s" ],
     [ "candle_s", "structcandle__s.html", "structcandle__s" ],
-    [ "TEST", "trade_8h.html#ab946e2e7f7679350627acfded8e2658b", null ],
     [ "candle_format_t", "trade_8h.html#a6baedd4bfcab8dbce15133dfeabb3070", null ],
     [ "candle_t", "trade_8h.html#ab861ef9b4fe7d24004fcf1182b72aafc", null ],
     [ "settings_t", "trade_8h.html#a0d5b5e8748451e0f430229ed4c14cb2b", null ],

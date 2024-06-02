@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['test_0',['TEST',['../trade_8h.html#ab946e2e7f7679350627acfded8e2658b',1,'trade.h']]],
-  ['time_5fper_5fmove_1',['time_per_move',['../structsettings__s.html#a3457840c603ec507545413f43d8da88f',1,'settings_s']]],
-  ['timebank_2',['timebank',['../structsettings__s.html#a11647e7a929be2968ebb3a8252374fa7',1,'settings_s']]],
-  ['trade_2eh_3',['trade.h',['../trade_8h.html',1,'']]],
-  ['trade_5fs_4',['trade_s',['../structtrade__s.html',1,'']]],
-  ['trade_5ft_5',['trade_t',['../trade_8h.html#a6d75f10e57318c4f08164cd24c571903',1,'trade.h']]],
-  ['transaction_5ffee_6',['transaction_fee',['../structsettings__s.html#a92db7919745d4dcf757e7beb0dc6fb19',1,'settings_s']]]
+  ['sell_0',['SELL',['../trade_8h.html#a6970df0a3a38215a962323af05feacd3',1,'trade.h']]],
+  ['send_5fto_5fsever_1',['send_to_sever',['../main_8c.html#a6d7cc56336dec69063b9e648af3bd403',1,'main.c']]],
+  ['settings_5fs_2',['settings_s',['../structsettings__s.html',1,'']]],
+  ['settings_5ft_3',['settings_t',['../trade_8h.html#a0d5b5e8748451e0f430229ed4c14cb2b',1,'trade.h']]],
+  ['size_5fbuffer_4',['size_buffer',['../structtrade__s.html#a0455846361b777bc84e4132575d55ec6',1,'trade_s']]],
+  ['splited_5',['splited',['../structtrade__s.html#adedcab531c61a65fa61f96760127423f',1,'trade_s']]],
+  ['stack_5fafter_6',['stack_after',['../structtrade__s.html#ac2925e3926790a6681893544d70dd35a',1,'trade_s']]],
+  ['success_7',['SUCCESS',['../trade_8h.html#abe60a9f2bde8bc2afea53b9efcf055bf',1,'trade.h']]]
 ];
