@@ -144,11 +144,181 @@ Include dependency graph for word_array_delim.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a3202420ce10577ae67b5628b4e8079d0" id="r_a3202420ce10577ae67b5628b4e8079d0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3202420ce10577ae67b5628b4e8079d0">is_delim</a> (char c, char *separators)</td></tr>
+<tr class="separator:a3202420ce10577ae67b5628b4e8079d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19de611cc63269245759f6a1a8e01e6" id="r_ab19de611cc63269245759f6a1a8e01e6"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab19de611cc63269245759f6a1a8e01e6">count_i_nb_words</a> (char const *str, int i, char *separators)</td></tr>
+<tr class="separator:ab19de611cc63269245759f6a1a8e01e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0865322b774f906360146a19f1d8ab" id="r_a0d0865322b774f906360146a19f1d8ab"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d0865322b774f906360146a19f1d8ab">get_nb_words</a> (char const *str, char *separators)</td></tr>
+<tr class="separator:a0d0865322b774f906360146a19f1d8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a159fa4eb806ef154d066457cc5d53a52" id="r_a159fa4eb806ef154d066457cc5d53a52"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a159fa4eb806ef154d066457cc5d53a52">get_word_length</a> (char const *str, int i, char *separators)</td></tr>
+<tr class="separator:a159fa4eb806ef154d066457cc5d53a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7153faa9a5a57a8bd34db5d5634c4f8e" id="r_a7153faa9a5a57a8bd34db5d5634c4f8e"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7153faa9a5a57a8bd34db5d5634c4f8e">parse_word</a> (char const *str, int *i, char *separators)</td></tr>
+<tr class="separator:a7153faa9a5a57a8bd34db5d5634c4f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04a1b43f512af074c19738dc6e3de682" id="r_a04a1b43f512af074c19738dc6e3de682"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04a1b43f512af074c19738dc6e3de682">word_array_delim</a> (char const *str, char *separators)</td></tr>
-<tr class="memdesc:a04a1b43f512af074c19738dc6e3de682"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function take a string in first argument and another string of separators in second argument, and she cut the first string with the second string, and she return an array of string.  <br /></td></tr>
+<tr class="memdesc:a04a1b43f512af074c19738dc6e3de682"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function take a string in first argument and another string of separators in second argument, and she cut the first string with the second string, and she return an <code>array of string</code>.  <br /></td></tr>
 <tr class="separator:a04a1b43f512af074c19738dc6e3de682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ab19de611cc63269245759f6a1a8e01e6" name="ab19de611cc63269245759f6a1a8e01e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab19de611cc63269245759f6a1a8e01e6">&#9670;&#160;</a></span>count_i_nb_words()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int count_i_nb_words </td>
+          <td>(</td>
+          <td class="paramtype">char const *</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>separators</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d0865322b774f906360146a19f1d8ab" name="a0d0865322b774f906360146a19f1d8ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d0865322b774f906360146a19f1d8ab">&#9670;&#160;</a></span>get_nb_words()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int get_nb_words </td>
+          <td>(</td>
+          <td class="paramtype">char const *</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>separators</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a159fa4eb806ef154d066457cc5d53a52" name="a159fa4eb806ef154d066457cc5d53a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a159fa4eb806ef154d066457cc5d53a52">&#9670;&#160;</a></span>get_word_length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int get_word_length </td>
+          <td>(</td>
+          <td class="paramtype">char const *</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>separators</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3202420ce10577ae67b5628b4e8079d0" name="a3202420ce10577ae67b5628b4e8079d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3202420ce10577ae67b5628b4e8079d0">&#9670;&#160;</a></span>is_delim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool is_delim </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>separators</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7153faa9a5a57a8bd34db5d5634c4f8e" name="a7153faa9a5a57a8bd34db5d5634c4f8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7153faa9a5a57a8bd34db5d5634c4f8e">&#9670;&#160;</a></span>parse_word()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char * parse_word </td>
+          <td>(</td>
+          <td class="paramtype">char const *</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>i</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>separators</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a04a1b43f512af074c19738dc6e3de682" name="a04a1b43f512af074c19738dc6e3de682"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a04a1b43f512af074c19738dc6e3de682">&#9670;&#160;</a></span>word_array_delim()</h2>
 
@@ -168,7 +338,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This function take a string in first argument and another string of separators in second argument, and she cut the first string with the second string, and she return an array of string. </p>
+<p>This function take a string in first argument and another string of separators in second argument, and she cut the first string with the second string, and she return an <code>array of string</code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">str</td><td></td></tr>

@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['time_5fper_5fmove_0',['time_per_move',['../structsettings__s.html#a3457840c603ec507545413f43d8da88f',1,'settings_s']]],
-  ['timebank_1',['timebank',['../structsettings__s.html#a11647e7a929be2968ebb3a8252374fa7',1,'settings_s']]],
-  ['trade_2eh_2',['trade.h',['../trade_8h.html',1,'']]],
-  ['trade_5fs_3',['trade_s',['../structtrade__s.html',1,'']]],
-  ['trade_5ft_4',['trade_t',['../trade_8h.html#a6d75f10e57318c4f08164cd24c571903',1,'trade.h']]],
-  ['transaction_5ffee_5',['transaction_fee',['../structsettings__s.html#a92db7919745d4dcf757e7beb0dc6fb19',1,'settings_s']]]
+  ['pair_5fposition_0',['pair_position',['../structcandle__format__s.html#a49a2f2d463522b4659543d3937c7cddc',1,'candle_format_s']]],
+  ['parse_5fword_1',['parse_word',['../word__array__delim_8c.html#a7153faa9a5a57a8bd34db5d5634c4f8e',1,'word_array_delim.c']]],
+  ['préliminaires_2',['Informations Préliminaires',['../index.html#autotoc_md2',1,'']]]
 ];

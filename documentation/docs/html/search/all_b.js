@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['settings_5fs_0',['settings_s',['../structsettings__s.html',1,'']]],
-  ['settings_5ft_1',['settings_t',['../trade_8h.html#a0d5b5e8748451e0f430229ed4c14cb2b',1,'trade.h']]],
-  ['size_5fbuffer_2',['size_buffer',['../structtrade__s.html#a0455846361b777bc84e4132575d55ec6',1,'trade_s']]]
+  ['open_0',['open',['../structcandle__s.html#a787010c882eade4d7e8bcfe46bdfd24b',1,'candle_s']]],
+  ['open_5fposition_1',['open_position',['../structcandle__format__s.html#a61ea1e768f2141272aa20c2b3ec45164',1,'candle_format_s']]]
 ];

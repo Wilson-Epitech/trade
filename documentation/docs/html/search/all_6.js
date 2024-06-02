@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['low_0',['LOW',['../trade_8h.html#a848adcf401be9122514726f46d6e55a4a6a226f4143ca3b18999551694cdb72a8',1,'trade.h']]],
-  ['low_1',['low',['../structcandle__s.html#a5244f46f6745949a59d0b11f6567e2e9',1,'candle_s']]]
+  ['high_0',['high',['../structcandle__s.html#a410b0763762f958bc91913fb3ebbaa64',1,'candle_s']]],
+  ['high_5fposition_1',['high_position',['../structcandle__format__s.html#abc167873ea393bfb61dd6a2fbe559c43',1,'candle_format_s']]]
 ];

@@ -38,7 +38,7 @@ static void get_format_position(settings_t *settings, char *str)
 
 static void get_settings(settings_t *settings, char **array)
 {
-    if (strcmp(array[1], "timebank")  == 0)
+    if (strcmp(array[1], "timebank") == 0)
         settings->timebank = atoi(array[2]);
     if (strcmp(array[1], "time_per_move") == 0)
         settings->time_per_move = atoi(array[2]);
@@ -46,7 +46,6 @@ static void get_settings(settings_t *settings, char **array)
         settings->candle_interval = atoi(array[2]);
     if (strcmp(array[1], "candle_format") == 0) {
         settings->candle_format.candle_str = strdup(array[2]);
-        fprintf(stderr, "%s\n", settings->candle_format.candle_str);
         get_format_position(settings, settings->candle_format.candle_str);
     }
     if (strcmp(array[1], "candles_total") == 0)
@@ -60,9 +59,52 @@ static void get_settings(settings_t *settings, char **array)
     return;
 }
 
+static int action(settings_t *settings, candle_t *candle,
+    trade_t *trade, char **array)
+{
+    float simulate = 0;
+
+    if (strncmp(trade->buffer, "update game next_candles", 24) == 0) {
+        array = word_array_delim(trade->buffer, " ");
+        trade->splited = word_array_delim(array[3], ",");
+        candle->close =
+            atof(trade->splited[settings->candle_format.close_position]);
+    }
+    if (strncmp(trade->buffer, "action order", 12) == 0) {
+        if (settings->initial_stack == 0)
+            return NOTHING;
+        trade->buy_quantity = settings->initial_stack / candle->close;
+        trade->stack_after = trade->buy_quantity * candle->close;
+        simulate = settings->initial_stack - trade->stack_after;
+        if (simulate < 0)
+            return NOTHING;
+        return BUY;
+    }
+    return 0;
+}
+
+static void send_to_sever(settings_t *settings,
+    trade_t *trade, candle_t *candle)
+{
+    char **array = NULL;
+    int result = action(settings, candle, trade, array);
+
+    if (result == NOTHING) {
+        fprintf(stdout, "no_moves\n");
+        fflush(stdout);
+        return;
+    }
+    if (result == BUY) {
+        printf("buy USDT_BTC %.8f\n", trade->buy_quantity);
+        fflush(stdout);
+        settings->initial_stack -= trade->stack_after;
+        return;
+    }
+}
+
 static int bot_loop(settings_t *settings, trade_t *trade, candle_t *candle)
 {
-    bool buy = false;
+    char **array = NULL;
 
     while (1) {
         if (getline(&trade->buffer, &trade->size_buffer, stdin) == -1) {
@@ -71,26 +113,11 @@ static int bot_loop(settings_t *settings, trade_t *trade, candle_t *candle)
             return FAILURE;
         }
         if (strncmp(trade->buffer, "settings", 8) == 0) {
-            char **array = word_array_delim(trade->buffer, " ");
+            array = word_array_delim(trade->buffer, " ");
             get_settings(settings, array);
         }
         fprintf(stderr, "buffer : %s", trade->buffer);
-        if (strncmp(trade->buffer, "update ", 6) == 0) {
-            char **array = word_array_delim(trade->buffer, " ");
-            char **splited_values = word_array_delim(array[3], ",");
-            candle->close = atof(splited_values[settings->candle_format.close_position]);
-            fprintf(stderr, "ici: %.2lf\n", candle->close);
-        }
-        // if (strcmp(buffer, "action order 2000\n") == 0 && i < 10) {
-        //     fprintf(stdout, "buy USDT_BTC 0.014283751290179836\n");
-        //     fflush(stdout);
-        //     buy = true;
-        //     i += 1;
-        // }
-        if (!buy) {
-            fprintf(stdout, "no_moves\n");
-            fflush(stdout);
-        }
+        send_to_sever(settings, trade, candle);
     }
     return SUCCESS;
 }

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['initial_5fstack_0',['initial_stack',['../structsettings__s.html#a962ded4b257b5f42054e7dac98de238d',1,'settings_s']]]
+  ['high_0',['high',['../structcandle__s.html#a410b0763762f958bc91913fb3ebbaa64',1,'candle_s']]],
+  ['high_5fposition_1',['high_position',['../structcandle__format__s.html#abc167873ea393bfb61dd6a2fbe559c43',1,'candle_format_s']]]
 ];

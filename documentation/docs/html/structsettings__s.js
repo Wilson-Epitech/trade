@@ -1,6 +1,6 @@
 var structsettings__s =
 [
-    [ "candle_format", "structsettings__s.html#a55b67c326099b909bd9e1cceb53096c8", null ],
+    [ "candle_format", "structsettings__s.html#a36859d330aec40ddc9e2742985e0b180", null ],
     [ "candle_interval", "structsettings__s.html#a4f1f9495ac023e6af6efae6be65bf2ff", null ],
     [ "candles_given", "structsettings__s.html#aed44155056117776de9fc5c0fb77a61d", null ],
     [ "candles_total", "structsettings__s.html#a354eec9979f678d51970a6f0850c9594", null ],

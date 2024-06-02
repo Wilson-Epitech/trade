@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['size_5fbuffer_0',['size_buffer',['../structtrade__s.html#a0455846361b777bc84e4132575d55ec6',1,'trade_s']]]
+  ['nothing_0',['NOTHING',['../trade_8h.html#a7609d9a81c0d8e5f318598fc94afdaf5',1,'trade.h']]]
 ];

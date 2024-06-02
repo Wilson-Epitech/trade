@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pair_0',['PAIR',['../trade_8h.html#a848adcf401be9122514726f46d6e55a4a360fa17489dc77903b0bcf1d91ae47bb',1,'trade.h']]],
-  ['préliminaires_1',['Informations Préliminaires',['../index.html#autotoc_md2',1,'']]]
+  ['main_0',['main',['../main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main.c']]],
+  ['main_2ec_1',['main.c',['../main_8c.html',1,'']]]
 ];

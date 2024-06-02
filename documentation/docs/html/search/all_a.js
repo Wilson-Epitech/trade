@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]]
+  ['nothing_0',['NOTHING',['../trade_8h.html#a7609d9a81c0d8e5f318598fc94afdaf5',1,'trade.h']]]
 ];

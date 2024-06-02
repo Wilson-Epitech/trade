@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['time_5fper_5fmove_0',['time_per_move',['../structsettings__s.html#a3457840c603ec507545413f43d8da88f',1,'settings_s']]],
-  ['timebank_1',['timebank',['../structsettings__s.html#a11647e7a929be2968ebb3a8252374fa7',1,'settings_s']]],
-  ['transaction_5ffee_2',['transaction_fee',['../structsettings__s.html#a92db7919745d4dcf757e7beb0dc6fb19',1,'settings_s']]]
+  ['open_0',['open',['../structcandle__s.html#a787010c882eade4d7e8bcfe46bdfd24b',1,'candle_s']]],
+  ['open_5fposition_1',['open_position',['../structcandle__format__s.html#a61ea1e768f2141272aa20c2b3ec45164',1,'candle_format_s']]]
 ];
