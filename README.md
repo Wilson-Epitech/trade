@@ -14,7 +14,7 @@
 
 <p align="center"><img src=".github/assets/trade-doc-main.png" alt="Trade" width="820"/></p>
 
-## En deux mots
+## Le projet en quelques mots
 
 Un bot qui dialogue avec un moteur de trading par l'entrée et la sortie standard. À chaque bougie (*candle*), il décide d'acheter, de vendre ou de ne rien faire, en tenant compte des frais. Le code est documenté fonction par fonction, et la doc HTML est générée avec Doxygen.
 
@@ -24,10 +24,6 @@ Un bot qui dialogue avec un moteur de trading par l'entrée et la sortie standar
 - Lecture du flux de bougies (open, high, low, close, volume)
 - Décision `buy` / `sell` / `no_moves` à chaque tour
 - Documentation Doxygen complète dans [`documentation/`](documentation)
-
-## Sous le capot
-
-Le format des bougies est envoyé au démarrage : le bot repère la position de chaque champ, puis parse les lignes suivantes en conséquence. Chaque décision est écrite sur la sortie standard, et le moteur l'exécute.
 
 ## Lancer le projet
 
