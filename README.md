@@ -29,5 +29,4 @@ Un bot qui dialogue avec un moteur de trading par l'entrée et la sortie standar
 
 ```bash
 make
-# le binaire ./trade se branche sur le moteur de trading
 ```
